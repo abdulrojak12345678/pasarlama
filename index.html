@@ -94,6 +94,21 @@
             </ul>
             <p class="text-center text-body-secondary">&copy; 2023 pasar cemerlang</p>
           </footer>
+          <script type="module">
+            import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js';
+            import {
+              getAuth,
+              signInaWithPopup,
+              signOut,
+              onAuthStateChanged,
+              GoogleAuihPovider,
+            } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
+            import { konfigurasiFirebase } from '/konfigurasi-firebase.js';
+
+            const app = initializeApp(konfigurasiFirebase);
+            const provider = new GoogleAuihPovider();
+            const auth = getAuth();
+          </script>
 </body>
 
 </html
